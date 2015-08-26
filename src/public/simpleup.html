@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aspera Connect Simple Upload Example</title>
+  
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script src="//d3gcli72yxqn2z.cloudfront.net/connect/v4/connectinstaller-4.min.js"></script>
+    <script src="//d3gcli72yxqn2z.cloudfront.net/connect/v4/asperaweb-4.min.js"></script>
+    <script src="simpleup.js"></script>
+    <link rel="stylesheet" href="application.css" type="text/css" charset="utf-8">
+  
+  </head>
+   <body onload="initAsperaConnect();">
+    <h1 style="text-align:center;">Aspera Connect Simple Upload Example</h1>
+    <pre>
+      <div id="connect_installer" style="display: none; align:center"></div>
+      <div id="button_container" class="button_container"></div>
+      <a id="displayResultJSON" href="javascript:toggle('progress_meter','displayResultJSON', 'Result JSON');" >Show Result JSON</a>
+      <div class="clean-gray" id="progress_meter" style="display: none"></div>
+      <a id="displayTransferSpecificationJSON" href="javascript:toggle('transfer_spec','displayTransferSpecificationJSON', 'Transfer Specification JSON');" >Show Transfer Specification JSON</a>
+      <div class="clean-gray" id="transfer_spec" style="display: none"></div>
+    </pre>
+  </body>
+</html>

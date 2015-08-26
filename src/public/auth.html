@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aspera Connect Simple Authentication Example</title>
+  
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script src="//d3gcli72yxqn2z.cloudfront.net/connect/v4/connectinstaller-4.min.js"></script>
+    <script src="//d3gcli72yxqn2z.cloudfront.net/connect/v4/asperaweb-4.min.js"></script>
+    <script src="asperaAuth.js"></script>
+    <link rel="stylesheet" href="application.css" type="text/css" charset="utf-8">
+  
+  </head>
+   <body onload="initAsperaConnect();">
+<h1 style="text-align:center;">Aspera Connect Simple Authentication Example</h1>
+<pre>
+  <div id="connect_installer" style="display: none; align:center"></div>
+    
+  <div id="intro_text" style="display: none; text-align:center; word-wrap: break-word">
+    <p>This example shows how to authenticate an user against a remote host with Aspera Connect 2.8+, using the API method <span class="code">authenticate</span>.</p><p>For simplicity and clarity, this sample code does not check that all the fields are filled, and does not mask the password.</p>
+    
+    <fieldset>      
+      <label for="host" id="host_label">Remote Host</label>  
+      <input type="text" name="host" id="host" size="30" value="192.168.59.103" class="text-input" />  
+        
+      <label for="user" id="user_label">Remote User</label>  
+      <input type="text" name="user" id="user" size="30" value="txuser1" class="text-input" />  
+        
+      <label for="passwd" id="passwd_label">Remote Password</label>  
+      <input type="password" name="passwd" id="passwd" size="30" value="batman"/>  
+      <br />  
+      <input type="submit" id="auth_button" name="upload" class="button auth_button" value="Authenticate"  data-default="Authenticate" />  
+    </fieldset> 
+    
+    <div id="authcontainer" class="authcontainer" style="display: none"><span id="authenticationresult"></span></div>
+  
+    <a id="displayAuthenticationCredentialsJSON" href="javascript:toggle('auth_spec','displayAuthenticationCredentialsJSON', 'Authentication Credentials JSON');" >Show Authentication Credentials JSON</a>
+    <div class="clean-gray" id="auth_spec" style="display: none"></div>
+  </div>
+</pre>
+  </body>
+</html>

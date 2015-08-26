@@ -1,0 +1,25 @@
+{
+  "name": "mean",
+  "description": "Media Centre - Auto Upload",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Simran",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "underscore": "1.5.x",
+    "async": "0.2.x",
+    "mean-logger": "0.0.x",
+    "debug": "0.7.x",
+    "node-v8-clone": "~0.4.5",
+    "restify": "~2.6.1",
+      "express": "3.x",
+    "winston": "~0.7.2",
+    "node-uuid": "1.4.1",
+    "node-proxy-protocol": "~1.0.0",
+    "charlatan": "0.1.9",
+    "request": "~2.34.0"
+  }
+}

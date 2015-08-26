@@ -1,0 +1,17 @@
+#!/bin/sh
+
+case "$1" in
+    "")
+        echo "Usage: $0 [production|local]"
+        ;;
+    "production")
+        echo "Starting the app..."
+        grunt build:dist
+        NODE_ENV=production npm start
+        ;;
+    "local")
+        echo "Starting the app..."
+        grunt build:dev
+        NODE_ENV=development PORT=3002 npm start
+        ;;
+esac
