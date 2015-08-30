@@ -1,0 +1,3 @@
+script:
+ - docker build -t dsbconsulting/simple-node-server:latest .
+ - docker push dsbconsulting/simple-node-server:latest
